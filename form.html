@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>正能量打卡 - 注册表单</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <!-- 导航栏（与主页一致） -->
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="form.html">正能量打卡</a></li>
+            <li><a href="media.html">励志资源库</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </div>
+    <!-- 表单容器 -->
+    <div class="form-container">
+        <h2>正能量每日打卡</h2>
+        <form action="" method="post">
+            <!-- 1. 文本输入框 -->
+            <div class="form-group">
+                <label for="username">昵称</label>
+                <input type="text" id="username" class="form-control" placeholder="请输入你的昵称" required>
+            </div>
+            <!-- 2. 密码输入框 -->
+            <div class="form-group">
+                <label for="password">设置打卡密码（仅自己可见）</label>
+                <input type="password" id="password" class="form-control" placeholder="请设置6-12位密码" required>
+            </div>
+            <!-- 3. 单选按钮 -->
+            <div class="form-group">
+                <label>今日状态</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="status" value="happy" checked> 元气满满</label>
+                    <label><input type="radio" name="status" value="ordinary"> 平稳进步</label>
+                    <label><input type="radio" name="status" value="struggle"> 努力坚持</label>
+                </div>
+            </div>
+            <!-- 4. 复选框 -->
+            <div class="form-group">
+                <label>今日完成的正能量小事（可多选）</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="thing" value="read"> 阅读励志文章</label>
+                    <label><input type="checkbox" name="thing" value="help"> 帮助他人</label>
+                    <label><input type="checkbox" name="thing" value="exercise"> 坚持运动</label>
+                    <label><input type="checkbox" name="thing" value="gratitude"> 表达感谢</label>
+                </div>
+            </div>
+            <!-- 5. 下拉选择框 -->
+            <div class="form-group">
+                <label for="goal">明日小目标</label>
+                <select id="goal" class="form-control" required>
+                    <option value="">请选择</option>
+                    <option value="早起">坚持早起</option>
+                    <option value="学习">专注学习2小时</option>
+                    <option value="陪伴">多陪伴家人朋友</option>
+                    <option value="自律">拒绝拖延</option>
+                </select>
+            </div>
+            <!-- 6. 文本域 -->
+            <div class="form-group">
+                <label for="remark">今日感悟（可选）</label>
+                <textarea id="remark" class="form-control" rows="4" placeholder="分享你的今日感悟，传递正能量～"></textarea>
+             </div>
+             <!-- 提交按钮 -->
+             <button type="submit" class="btn">提交打卡</button>
+         </form>
+     </div>
+     <!-- 页脚 -->
+     <div class="footer" id="contact">
+         <p>版权所有 © 正能量生活分享平台</p>
+         <p>专业：物联网 | 班级：二班 | 学号：250402081 | 姓名：袁成勋 | 联系方式：XXX</p>
+     </div>
+ </body>
+ </html>
